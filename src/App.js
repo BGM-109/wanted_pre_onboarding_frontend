@@ -1,8 +1,18 @@
+import NavBrand from './components/NavBrand'
+import NavMenu from './components/NavMenu'
+import NavAccount from './components/NavAccount'
+
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="w-full h-screen">
+      <div className="w-full border-b-[1px]" id="header">
+        <div className="container-lg mx-auto p-4 flex flex-row items-center justify-between ">
+          <NavBrand />
+          <NavMenu />
+          <NavAccount />
+        </div>
+      </div>
+    </div>
   );
 }
 
