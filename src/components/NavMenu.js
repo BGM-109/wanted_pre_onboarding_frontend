@@ -7,18 +7,18 @@ const menuList = [
     "이력서",
     "커뮤니티",
     "프리랜서",
-    "AI 합격에측",
+    "AI 합격예측",
 ];
 
 const NavMenu = () => {
     return (
-        <div className="flex flex-row space-x-4">
+        <ul className="flex flex-row basic-1/2">
             {menuList.map((menu) => (
-                <p>
+                <li className="py-3 px-4 border-white text-sm font-semibold border-b-2 hover:border-gray-200">
                     {menu}
-                </p>
+                </li>
             ))}
-        </div>
+        </ul>
     );
 };
 
