@@ -13,8 +13,8 @@ const menuList = [
 const NavMenu = () => {
     return (
         <ul className="flex flex-row basic-1/2">
-            {menuList.map((menu) => (
-                <li className="py-3 px-4 border-white text-sm font-semibold border-b-2 hover:border-gray-200">
+            {menuList.map((menu, index) => (
+                <li key={index} className="py-3 px-4 border-white text-sm font-semibold border-b-2 hover:border-gray-200 cursor-pointer">
                     {menu}
                 </li>
             ))}
