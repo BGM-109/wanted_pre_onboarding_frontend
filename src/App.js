@@ -20,10 +20,13 @@ function App() {
   return (
     <div className="w-full h-screen">
       <div className="w-full border-b-[1px]" id="header">
-        <div className="max-w-screen-lg mx-auto flex flex-row items-center justify-between">
+        <div className="md:w-11/12 lg:max-w-navwidth mx-auto flex flex-col lg:flex-row items-center justify-between">
           <NavBrand />
-          <NavMenu />
-          <NavAccount />
+          <div className="w-full flex flex-row justify-between items-center pb-3 px-3 lg:p-0 lg:justify-end">
+            <NavMenu />   
+            <NavAccount />
+          </div>
+          
         </div>
       </div>
       <ImageSlider slides = {heroImages}/>
