@@ -32,13 +32,13 @@ const ImageSlider = ({
     return (
         <div className="relative h-80 my-4 py-2 flex items-center justify-center" id="ImageSlider">
             <div  
-                className="relative flex items-center slide w-full max-w-screen-lg h-full shrink-0 bg-center bg-cover mx-5 rounded-md transition-all ease-in-out duration-700 brightness-50"
+                className="max-w-navwidth relative flex items-center slide w-full max-w-screen-lg h-full shrink-0 bg-center bg-cover mx-5 rounded-md transition-all ease-in-out duration-700 brightness-50"
                 style={current === 0  ? {backgroundImage: `url(${slides[length - 1].imageUrl})`} : {backgroundImage: `url(${slides[current - 1].imageUrl})`}}
                 >
                     <ImageSliderArrow isLeft={true} onClick={prevSlide}/>
             </div>
             <div  
-                className="relative slide w-full max-w-screen-lg h-full shrink-0 bg-center bg-cover mx-1 rounded-md transition-all ease-in-out duration-700 cursor-pointer"
+                className="max-w-navwidth  relative slide w-full max-w-screen-lg h-full shrink-0 bg-center bg-cover mx-1 rounded-md transition-all ease-in-out duration-700 cursor-pointer"
                 style={{backgroundImage: `url(${slides[current].imageUrl})`}}
                 >
                 <div className="flex flex-col absolute bottom-5 left-5 bg-white w-1/3 rounded-md cursor-default">
@@ -50,7 +50,7 @@ const ImageSlider = ({
                 </div>
             </div>
             <div  
-                className="relative flex items-center slide w-full max-w-screen-lg h-full shrink-0 bg-center bg-cover mx-5 rounded-md transition-all ease-in-out duration-700 brightness-50"
+                className="max-w-navwidth relative flex items-center slide w-full max-w-screen-lg h-full shrink-0 bg-center bg-cover mx-5 rounded-md transition-all ease-in-out duration-700 brightness-50"
                 style={current === length - 1 ? {backgroundImage: `url(${slides[0].imageUrl})`} : {backgroundImage: `url(${slides[current + 1].imageUrl})`}}
                 >
                     <ImageSliderArrow isLeft={false} onClick={nextSlide} />

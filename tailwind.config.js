@@ -6,6 +6,9 @@ module.exports = {
     maxWidth: {
       'navwidth': '1060px',
     },
+    'laptop': '1060px',
+      // => @media (min-width: 1024px) { ... }
+
     extend: {},
   },
   plugins: [],

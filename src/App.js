@@ -20,14 +20,15 @@ function App() {
   return (
     <div className="w-full h-screen">
       <div className="w-full border-b-[1px]" id="header">
-        <div className="md:w-11/12 lg:max-w-navwidth mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <div className="max-w-navwidth mx-auto lg:flex lg:flex-row items-center justify-between md:w-11/12">
           <NavBrand />
-          <div className="w-full flex flex-row justify-between items-center pb-3 px-3 lg:p-0 lg:justify-end">
+          <div className="flex flex-row justify-between items-center pb-2 px-3 md:pb-0 lg:w-10/12">
             <NavMenu />   
             <NavAccount />
           </div>
-          
         </div>
+        
+        
       </div>
       <ImageSlider slides = {heroImages}/>
 

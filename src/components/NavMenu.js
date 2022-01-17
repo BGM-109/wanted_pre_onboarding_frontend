@@ -18,7 +18,7 @@ const mobileMenu = [
 const NavMenu = () => {
     return (
         <>
-        <ul className="flex flex-row md:hidden w-1/2 self-start">
+        <ul className="flex flex-row md:hidden ">
             {
                 mobileMenu.map((menu, index) => (
                     <li className="p-2 text-sm font-bold " key={index}>
@@ -27,7 +27,7 @@ const NavMenu = () => {
                 ))
             }
         </ul>
-        <ul className="hidden md:flex md:flex-row md:basic-1/2 md:items-center">
+        <ul className="hidden md:flex md:flex-row md:items-center min-w-fit">
             {menuList.map((menu, index) => (
                 <li key={index} className="relative h-[50px] py-3.5 px-4  border-white text-sm font-semibold border-b-2 hover:border-gray-200 cursor-pointer">
                     {menu.title}

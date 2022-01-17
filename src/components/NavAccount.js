@@ -5,8 +5,8 @@ import profile from '../images/profile.jpg';
 
 const NavAccount = () => {
     return (
-        <div className="flex flex-row divide-x space-x-7 h-2 lg:ml-20">
-            <div className="flex flex-row items-center justify-center space-x-2 lg:space-x-4">
+        <div className="flex flex-row divide-x space-x-5 h-2">
+            <div className="flex flex-row items-center justify-center space-x-3">
                 <div className="cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -27,8 +27,8 @@ const NavAccount = () => {
             </div>
             
            
-            <div className="lg:flex lg:items-center hidden">
-                <p className="text-sm ml-7 border rounded-3xl py-1 px-3 cursor-pointer text-gray-500">기업 서비스</p>
+            <div className="lg:flex lg:items-center hidden min-w-fit">
+                <p className="text-sm ml-3 border rounded-3xl py-1 px-3 cursor-pointer text-gray-500">기업 서비스</p>
             </div>
         </div>
     );
