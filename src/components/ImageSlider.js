@@ -35,25 +35,25 @@ const ImageSlider = ({
             
             <div  
                 className="relative flex items-center slide w-full max-w-screen-lg h-full shrink-0 bg-center bg-cover mx-5 rounded-md transition-all ease-in-out duration-700 brightness-50"
-                style={current === 0  ? {backgroundImage: `url(${slides[length - 1]})`} : {backgroundImage: `url(${slides[current - 1]})`}}
+                style={current === 0  ? {backgroundImage: `url(${slides[length - 1].imageUrl})`} : {backgroundImage: `url(${slides[current - 1].imageUrl})`}}
                 >
                     <ImageSliderArrow isLeft={true} onClick={prevSlide}/>
             </div>
             <div  
                 className="relative slide w-full max-w-screen-lg h-full shrink-0 bg-center bg-cover mx-1 rounded-md transition-all ease-in-out duration-700 cursor-pointer"
-                style={{backgroundImage: `url(${slides[current]})`}}
+                style={{backgroundImage: `url(${slides[current].imageUrl})`}}
                 >
                 <div className="flex flex-col absolute bottom-5 left-5 bg-white w-1/3 rounded-md cursor-default">
                     <div className="border-b-[1px] px-5 py-5 w-full">
-                        <p className="text-xl font-bold pb-1">성장하는 개발자가 되려면?</p>
-                        <p className="text-sm">OOO 검색하지 말것</p>
+                        <p className="text-xl font-bold pb-1">{slides[current].title}</p>
+                        <p className="text-sm">{slides[current].subTitle}</p>
                     </div>
-                    <p className="px-5 py-4 text-sm font-semibold text-blue-500">바로가기 ></p>
+                    <p className="px-5 py-4 text-sm font-semibold text-blue-500 cursor-pointer">바로가기 ></p>
                 </div>
             </div>
             <div  
                 className="relative flex items-center slide w-full max-w-screen-lg h-full shrink-0 bg-center bg-cover mx-5 rounded-md transition-all ease-in-out duration-700 brightness-50"
-                style={current === length - 1 ? {backgroundImage: `url(${slides[0]})`} : {backgroundImage: `url(${slides[current + 1]})`}}
+                style={current === length - 1 ? {backgroundImage: `url(${slides[0].imageUrl})`} : {backgroundImage: `url(${slides[current + 1].imageUrl})`}}
                 >
                     <ImageSliderArrow isLeft={false} onClick={nextSlide} />
             </div>
