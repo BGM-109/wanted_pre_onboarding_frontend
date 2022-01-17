@@ -23,7 +23,7 @@ const NavAccount = () => {
             
            
             <div className="flex items-center">
-                <p className="text-sm ml-7 border rounded-3xl py-1 px-3 cursor-pointer">기업 서비스</p>
+                <p className="text-sm ml-7 border rounded-3xl py-1 px-3 cursor-pointer text-gray-500">기업 서비스</p>
             </div>
         </div>
     );

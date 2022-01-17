@@ -30,9 +30,7 @@ const ImageSlider = ({
     };
 
     return (
-        <>
         <div className="relative h-80 my-4 py-2 flex items-center justify-center" id="ImageSlider">
-            
             <div  
                 className="relative flex items-center slide w-full max-w-screen-lg h-full shrink-0 bg-center bg-cover mx-5 rounded-md transition-all ease-in-out duration-700 brightness-50"
                 style={current === 0  ? {backgroundImage: `url(${slides[length - 1].imageUrl})`} : {backgroundImage: `url(${slides[current - 1].imageUrl})`}}
@@ -57,10 +55,7 @@ const ImageSlider = ({
                 >
                     <ImageSliderArrow isLeft={false} onClick={nextSlide} />
             </div>
-            
         </div>
-        </>
-        
     );
 };
 
