@@ -19,7 +19,7 @@ const ImageSlider = ({
         }, autoPlayTime)
 
         return () => clearTimeout(timer)
-    }, [current]);
+    }, [current,autoPlayTime, length]);
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
